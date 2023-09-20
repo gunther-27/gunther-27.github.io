@@ -4403,36 +4403,8 @@ display: none;
 <div id="bronx-zoo" class="section level2">
 <h2>Bronx Zoo</h2>
 <p>Location of some of the animals in the Bronx Zoo</p>
-<pre class="r"><code>library(leaflet)</code></pre>
-<pre><code>## Warning: package &#39;leaflet&#39; was built under R version 4.2.3</code></pre>
-<pre class="r"><code># my_map &lt;- leaflet() %&gt;% 
-#   addTiles()
-# 
-# my_map
-
-# Tigers 40.85130932646403, -73.87702052946744
-# Gorillas 40.84825832905829, -73.88099605984723
-# Lions 40.847061585736256, -73.87801716007117
-# Bears 40.84893366111787, -73.87753633689145
-# Flamingos 40.84923318828472, -73.88060512046674
-# Penguins 40.85398265214811, -73.87895995077062
-# Bison 40.85376731447453, -73.87594162635565
-
-df &lt;- data.frame(
-  lat = c(40.85130932646403,40.84825832905829,40.847061585736256,40.84893366111787,40.84923318828472,40.85398265214811,40.85376731447453),
-  lng = c(-73.87702052946744,-73.88099605984723,-73.87801716007117,-73.87753633689145,-73.88060512046674,-73.87895995077062,-73.87594162635565)
-)
-
-animals &lt;- c(
-  &#39;Tigers&#39;, &#39;Gorillas&#39;,&#39;Lions&#39;,&#39;Bears&#39;,&#39;Flamingos&#39;,&#39;Penguins&#39;,&#39;Bison&#39;
-)
-
-df %&gt;% 
-  leaflet() %&gt;%
-  addTiles() %&gt;%
-  addMarkers(popup = animals)</code></pre>
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-6e8fc93ddbcd13301ad2" style="width:672px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-6e8fc93ddbcd13301ad2">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[[40.851309326464,40.8482583290583,40.8470615857363,40.8489336611179,40.8492331882847,40.8539826521481,40.8537673144745],[-73.8770205294674,-73.8809960598472,-73.8780171600712,-73.8775363368915,-73.8806051204667,-73.8789599507706,-73.8759416263557],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["Tigers","Gorillas","Lions","Bears","Flamingos","Penguins","Bison"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[40.8470615857363,40.8539826521481],"lng":[-73.8809960598472,-73.8759416263557]}},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-41a727ac52fe0709d36f" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-41a727ac52fe0709d36f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[[40.851309326464,40.8482583290583,40.8470615857363,40.8489336611179,40.8492331882847,40.8539826521481,40.8537673144745],[-73.8770205294674,-73.8809960598472,-73.8780171600712,-73.8775363368915,-73.8806051204667,-73.8789599507706,-73.8759416263557],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["Tigers","Gorillas","Lions","Bears","Flamingos","Penguins","Bison"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[40.8470615857363,40.8539826521481],"lng":[-73.8809960598472,-73.8759416263557]}},"evals":[],"jsHooks":[]}</script>
 </div>
 
 
